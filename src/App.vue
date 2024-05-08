@@ -1,6 +1,11 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import { Alert } from 'vue-tg'
+import { MainButton } from 'vue-tg'
+
+const isAlertVisible = ref(false)
 </script>
 
 <template>
@@ -15,6 +20,9 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/about">About</RouterLink>
       </nav>
     </div>
+
+    <MainButton @click="isAlertVisible = true" />
+    <Alert v-if="isAlertVisible" message="Hello!" @close="isAlertVisible = false" />
   </header>
 
   <RouterView />
