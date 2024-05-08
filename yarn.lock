@@ -614,6 +614,11 @@
   resolved "https://registry.yarnpkg.com/@types/semver/-/semver-7.5.8.tgz#8268a8c57a3e4abd25c165ecd36237db7948a55e"
   integrity sha512-I8EUhyrgfLrcTkzV3TSsGyl1tSuPrEDzr0yd5m90UgNxQkyDXULk3b6MlQqTCpZpNtWe1K0hzclnZkTcLBe2UQ==
 
+"@types/telegram-web-app@^7.2.1":
+  version "7.2.1"
+  resolved "https://registry.yarnpkg.com/@types/telegram-web-app/-/telegram-web-app-7.2.1.tgz#655c4acf6d00a096e5ed2a67e09465da1cccead4"
+  integrity sha512-aXUUyTE8vVwolOta84wPybKNAeZq6rPVYCn/mnewN+tqF5QBqoQFnvqUATn7yNFH2+hpYF2Z2fKU6lnMQ8EC3A==
+
 "@typescript-eslint/eslint-plugin@^7.1.1":
   version "7.8.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-7.8.0.tgz#c78e309fe967cb4de05b85cdc876fb95f8e01b6f"
@@ -2117,6 +2122,14 @@ vue-template-compiler@^2.7.14:
     de-indent "^1.0.2"
     he "^1.2.0"
 
+vue-tg@^0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/vue-tg/-/vue-tg-0.6.1.tgz#a8218fb600241d579726c19adf0b3d7246b4f59a"
+  integrity sha512-Z1dwGLNQ9OYhYfR2NUmmpeXoWkV+gjeW7NVN5ZIYaxetyZCZF93nfXAZQnDVssfRMn7I37iJoTZLYe3eZZZCQA==
+  dependencies:
+    "@types/telegram-web-app" "^7.2.1"
+    vue "^3"
+
 vue-tsc@^2.0.11:
   version "2.0.16"
   resolved "https://registry.yarnpkg.com/vue-tsc/-/vue-tsc-2.0.16.tgz#ba82c4cdac283e8e39e30e817c8c1c967e528358"
@@ -2126,7 +2139,7 @@ vue-tsc@^2.0.11:
     "@vue/language-core" "2.0.16"
     semver "^7.5.4"
 
-vue@^3.4.21:
+vue@^3, vue@^3.4.21:
   version "3.4.27"
   resolved "https://registry.yarnpkg.com/vue/-/vue-3.4.27.tgz#40b7d929d3e53f427f7f5945386234d2854cc2a1"
   integrity sha512-8s/56uK6r01r1icG/aEOHqyMVxd1bkYcSe9j8HcKtr/xTOFWvnzIVTehNW+5Yt89f+DLBe4A569pnZLS5HzAMA==
